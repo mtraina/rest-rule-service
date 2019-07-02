@@ -6,10 +6,10 @@ import org.springframework.http.MediaType.APPLICATION_JSON
 import org.springframework.web.reactive.function.server.router
 
 @Configuration
-open class Routes(private val ruleHandler: RuleHandler) {
+class Routes(private val ruleHandler: RuleHandler) {
 
     @Bean
-    open fun router() = router {
+    fun router() = router {
         "/api".nest {
             accept(APPLICATION_JSON).nest {
                 GET("/rules", ruleHandler::findAll)

@@ -7,7 +7,7 @@ import org.springframework.context.support.GenericApplicationContext
 import org.springframework.context.support.beans
 
 @SpringBootApplication
-open class Application {
+class Application {
     @Autowired
     fun register(ctx: GenericApplicationContext) = beans().initialize(ctx)
 }
