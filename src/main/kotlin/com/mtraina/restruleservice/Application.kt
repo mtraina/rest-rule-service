@@ -6,6 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.context.support.GenericApplicationContext
 import org.springframework.context.support.beans
 
+// TODO to be removed once teh kotlin dsl is fully ready
+// https://docs.spring.io/spring/docs/5.2.0.BUILD-SNAPSHOT/spring-framework-reference/languages.html#kotlin-bean-definition-dsl
 @SpringBootApplication
 class Application {
     @Autowired
